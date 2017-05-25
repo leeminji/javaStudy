@@ -1,0 +1,52 @@
+{
+	"schedule" : [
+	{
+		"no" : "1",
+		"num" : "1",
+		"date" : "2017-02-04",
+		"title" : "스케쥴 2017-02-04[1]",
+		"content" : "내용내용",
+		"writer" : "admin"
+	},
+	{
+		"no" : "2",
+		"num" : "2",
+		"date" : "2017-02-04",
+		"title" : "스케쥴 2017-02-04[2]",
+		"content" : "내용내용",
+		"writer" : "admin"
+	},
+	{
+		"no" : "3",
+		"num" : "3",
+		"date" : "2017-02-05",
+		"title" : "스케쥴2017-02-05",
+		"content" : "내용내용",
+		"writer" : "admin"
+	},
+	{
+		"no" : "4",
+		"num" : "2",
+		"date" : "2017-01-13",
+		"title" : "스케쥴2017-01-13",
+		"content" : "내용내용",
+		"writer" : "admin"
+	},
+	{
+		"no" : "5",
+		"num" : "2",
+		"date" : "2017-01-30",
+		"title" : "스케쥴11",
+		"content" : "내용내용",
+		"writer" : "admin"
+	},
+	{
+		"no" : "6",
+		"num" : "2",
+		"date" : "2017-01-01",
+		"title" : "스케쥴ddddd",
+		"content" : "내용내용",
+		"writer" : "admin"
+	}
+	]
+}
