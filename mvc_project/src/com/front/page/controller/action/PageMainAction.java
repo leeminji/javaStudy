@@ -47,7 +47,7 @@ public class PageMainAction implements PageAction {
 		
 		//최신글
 		BoardDAO bDao = BoardDAO.getInstance();
-		ArrayList<BoardVO> list = bDao.getBoardList("portfolio", 1, 7, "", "", "");
+		ArrayList<BoardVO> list = bDao.getBoardList("portfolio", 1, 13, "", "", "");
 		request.setAttribute("boardList", list);
 
 		//메인설정

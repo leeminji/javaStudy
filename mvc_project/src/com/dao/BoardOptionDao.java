@@ -55,7 +55,7 @@ public class BoardOptionDao {
 	//Boardoption 리스트 가져오기
 	public ArrayList<BoardOptionVO> getBoardOptionList(int firstRow , int endRow, String sfl, String stx, String sst){
 		ArrayList<BoardOptionVO> list = new ArrayList<>();
-		System.out.println(firstRow+"/"+endRow);
+
 		//페이징 처리
 		String sql = " SELECT * FROM ";
 			   sql += "    ( SELECT A.* , ROWNUM AS RNUM FROM ";

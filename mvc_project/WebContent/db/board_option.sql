@@ -1,3 +1,6 @@
+select op_table from BOARD_OPTION;
+
+
 create table board_option(
 	op_idx	number(10) not null,
 	op_name	varchar2(10) not null,

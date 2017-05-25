@@ -1,12 +1,17 @@
 package com.util;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.naming.Context;
+import javax.sql.DataSource;
+import javax.naming.InitialContext;
 
 public class DBManager {
-	public static Connection getConnection(){
+	public static Connection getConnection() throws SQLException{
+		/*
 		Connection conn = null;
 		try{
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -14,7 +19,18 @@ public class DBManager {
 		}catch(Exception e){
 			System.out.println("db연동 실패:"+e.getMessage());
 		}
-		return conn;		
+		return conn; 
+		*/	
+		
+		//DB커넥션풀
+		DataSource ds = null;
+		try{
+			Context init = new InitialContext();
+			ds = (DataSource)init.lookup("java:comp/env/jdbc/OracleDB");
+		}catch (Exception ex) {
+			System.out.println("DB Connection fail :"+ex);
+		}
+		return ds.getConnection();
 	}
 	
 	//수행후 리소스 해제 메서드

@@ -11,7 +11,9 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpSession;
 
 import com.admin.login.controller.action.AdmAction;
+import com.dao.BoardOptionDao;
 import com.dao.MemberDAO;
+import com.dto.BoardOptionVO;
 import com.dto.MemberVO;
 
 public class AdmMainAction implements AdmAction {
@@ -29,6 +31,7 @@ public class AdmMainAction implements AdmAction {
 			ArrayList<MemberVO> memberList = mDao.getMemberList(1, 10, "", "", "");
 			request.setAttribute("memberList", memberList);
 			
+
 			String url = "/admin/main/main.jsp";
 			RequestDispatcher dispatcher = request.getRequestDispatcher(url);
 			dispatcher.forward(request, response);
